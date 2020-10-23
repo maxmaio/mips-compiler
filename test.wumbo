@@ -1,0 +1,287 @@
+//Global Variable Declaration
+int intG;
+bool boolG;
+
+void func1(){
+    cout << "Testing void function with no parameters.\n";
+}
+
+int func2(int param1, int param2) {
+    int returnValue;
+
+    cout << "Testing int function with 2 parameters.\n";
+    cout << "Parameters passed in are: ";
+    cout << param1;
+    cout << " and ";
+    cout << param2;
+    cout << "\n";
+
+    returnValue = param1 + param2;
+    return returnValue;
+}
+
+
+void main() {
+    //Local Variable Declaration
+    int intL1;
+    int intL2;
+    int userInput;
+    int counter;
+    int returnedInt;
+    bool boolL;
+
+    //Variable Initialization
+    intG = 2;
+    intL1 = 4;
+    intL2 = -6;
+
+    boolG = false;
+    boolL = true;
+
+    //Arithmetic Operators
+    cout << "Testing Arithmetic Operators:\n";
+
+    cout << "Printing intL1: ";
+    cout << intL1;
+    cout << "\n";
+
+    cout << "Printing intL2: ";
+    cout << intL2;
+    cout << "\n";
+
+    cout << "Printing intG: ";
+    cout << intG;
+    cout << "\n";
+
+    cout << "Printing intL1 + intG: ";
+    cout << intL1 + intG;
+    cout << "\n";
+
+    cout << "Printing intL1 - intG: ";
+    cout << intL1 - intG;
+    cout << "\n";
+
+    cout << "Printing intL2 * intL1 : ";
+    cout << intL2 * intL1;
+    cout << "\n";
+
+    cout << "Printing intL2 / intG: ";
+    cout << intL2 / intG;
+    cout << "\n";
+
+    cout << "Printing -intL1: ";
+    cout << -intL1;
+    cout << "\n";
+
+    cout << "Printing intL1++: ";
+    intL1++;
+    cout << intL1;
+    cout << "\n";
+
+    cout << "Printing intG--: ";
+    intG--;
+    cout << intG;
+    cout << "\n";
+    cout << "\n";
+
+    //Logical Operators
+    cout << "Testing Logical Operators:\n";
+
+    cout << "Printing boolL: ";
+    cout << boolL;
+    cout << "\n";
+
+    cout << "Printing boolG: ";
+    cout << boolG;
+    cout << "\n";
+
+    cout << "Printing !boolL: ";
+    cout << !boolL;
+    cout << "\n";
+
+    cout << "Printing result of boolL && boolG: ";
+    cout << boolL && boolG;
+    cout << "\n";
+
+    cout << "Printing result of boolL && boolL: ";
+    cout << boolL && boolL;
+    cout << "\n";
+
+    cout << "Printing result of boolL || boolG: ";
+    cout << boolL || boolG;
+    cout << "\n";
+
+    cout << "Printing result of boolG || boolG: ";
+    cout << boolG || boolG;
+    cout << "\n";
+    cout << "\n";
+
+    //Relational Operators
+    cout << "Testing Relational Operators:\n";
+
+    cout << "Printing intL1: ";
+    cout << intL1;
+    cout << "\n";
+
+    cout << "Printing intL2: ";
+    cout << intL2;
+    cout << "\n";
+
+    cout << "Printing intG: ";
+    cout << intG;
+    cout << "\n";
+
+    cout << "Printing result of intG < intL1: ";
+    cout << intG < intL1;
+    cout << "\n";
+
+    cout << "Printing result of intL1 < intG: ";
+    cout << intL1 < intG;
+    cout << "\n";
+
+    cout << "Printing result of intG > intL1: ";
+    cout << intG > intL1;
+    cout << "\n";
+
+    cout << "Printing result of intL1 > intG: ";
+    cout << intL1 > intG;
+    cout << "\n";
+
+    cout << "Printing result of intG <= intL1 : ";
+    cout << intG <= intL1;
+    cout << "\n";
+
+    cout << "Printing result of intL1 <= intG: ";
+    cout << intL1 <= intG;
+    cout << "\n";
+
+    cout << "Printing result of intL1 <= intL1 : ";
+    cout << intL1 <= intL1;
+    cout << "\n";
+
+    cout << "Printing result of intG >= intL1: ";
+    cout << intG >= intL1;
+    cout << "\n";
+
+    cout << "Printing result of intL1 >= intG : ";
+    cout << intL1 >= intG;
+    cout << "\n";
+
+    cout << "Printing result of intL1 >= intL1: ";
+    cout << intL1 >= intL1;
+    cout << "\n";
+    cout << "\n";
+
+    //Equality Operators
+    cout << "Testing Equality Operators:\n";
+
+    cout << "Printing intL1: ";
+    cout << intL1;
+    cout << "\n";
+
+    cout << "Printing intG: ";
+    cout << intG;
+    cout << "\n";
+
+    cout << "Printing result of intL1 == intG: ";
+    cout << intL1 == intG;
+    cout << "\n";
+
+    cout << "Printing result of intL1 == intL1 : ";
+    cout << intL1 == intL1;
+    cout << "\n";
+
+    cout << "Printing result of intL1 != intG: ";
+    cout << intL1 != intG;
+    cout << "\n";
+
+    cout << "Printing result of intL1 != intL1 : ";
+    cout << intL1 != intL1;
+    cout << "\n";
+    cout << "\n";
+
+    //Reading and Writing Testing
+    cout << "Testing Writing and Reading:\n";
+
+    cout << "Please enter an int and press enter: ";
+    cin >> userInput;
+    cout << "You entered: ";
+    cout << userInput;
+    cout << "\n";
+    cout << "\n";
+
+    //If and If Else Statement Testing
+    cout << "Testing If and If Else Statements:\n";
+
+    cout << "Printing intL1: ";
+    cout << intL1;
+    cout << "\n";
+
+    cout << "Printing intG: ";
+    cout << intG;
+    cout << "\n";
+
+    if(intL1 > intG){
+        cout << "Print if intL1 > intG.\n";
+    }
+    if(intL1 < intG){
+        cout << "Print if intL1 < intG.\n";
+    }
+
+    if (true) {
+        cout << "If Else Statement 1 Success.\n";
+    }else {
+        cout << "If Else Statement 1 Fail.\n";
+    }
+
+    if (false) {
+        cout << "If Else Statement 2 Fail.\n";
+    }else {
+        cout << "If Else Statement 2 Success.\n";
+    }
+    cout << "\n";
+
+    //While Statement Testing
+    cout << "Testing While Statements:\n";
+
+    counter = 0;
+    cout << "Using While Loop to count until 25.\n";
+    while(counter < 25) {
+        cout << counter;
+        cout << " ";
+        counter++;
+    }
+    cout << "\n";
+    cout << "\n";
+
+    //Function Call Testing
+    cout << "Testing Function Calls:\n";
+    func1();
+
+    returnedInt = func2(intL1, intL2);
+    cout << "Printing the return value, which is the sum of the parameters: ";
+    cout << returnedInt;
+    cout << "\n";
+    cout << "All tests are complete!\n";
+    cout << "               ,,ggddY888Ybbgg,,\n ";
+    cout << "          ,agd8888   .d8888888888bga,\n ";
+    cout << "       ,gdP568     .d88888888888888888g,\n";
+    cout << "     ,dP4        ,d888888888888888888888b,\n";
+    cout << "   ,dP4         ,8888888888888888888888888b,\n";
+    cout << "  ,84          ,8888888P'''88888888888888888,\n";
+    cout << " ,8'           I888888I    )88888888888888888,\n";
+    cout << ",8'            `8888888booo8888888888888888888,\n";
+    cout << "d'              `88888888888888888888888888888b\n";
+    cout << "8                ``8888888888888888888888888888\n";
+    cout << "8                  ``88888888888888888888888888\n";
+    cout << "8                      `18888888888888888888888\n";
+    cout << "Y,                        `8888888888888888888P\n";
+    cout << "`8,                         `88888888888888888'\n";
+    cout << " `8,              .oo.       `888888888888888'\n";
+    cout << "  `8a             8888        88888888888888'\n";
+    cout << "   `Yba           `oo'       ,888888888888P'\n";
+    cout << "     `Yba                   ,88888888888'\n";
+    cout << "       ``Yba,             ,8888888888P`'   \n";             
+    cout << "          ``Y8baa,      ,d88888888P`'\n";
+    cout << "               ````YYba8888P888`'\n";
+}
